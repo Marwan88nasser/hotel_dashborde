@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Normalize -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Main Faile Css  -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Start layout -->
+    <div class="app h-app">
+      <div class="sidebar">
+        <div class="close tog-nav tog-active" data-active=".app">
+          <i class="fas fa-xmark"></i>
+        </div>
+        <ul class="list">
+          <li class="list-item active">
+            <a href="">
+              <div>
+                <i class="fa-solid fa-desktop icon"></i>
+                الواجهة
+              </div>
+            </a>
+          </li>
+          <li class="list-item">
+            <a href="">
+              <div>
+                <i class="fa-solid fa-gear icon"></i>
+                الاعدادت 
+              </div>
+            </a>
+          </li>
+          <li class="list-item">
+            <a href="">
+              <div>
+                <i class="fa-solid fa-user-tie icon"></i>
+                المشرفين
+              </div>
+            </a>
+          </li>
+          <li class="list-item">
+            <a href="">
+              <div>
+                <i class="fa-brands fa-nfc-directional icon"></i>
+                الاقسام
+              </div>
+            </a>
+          </li>
+          <li class="list-item">
+            <a href="">
+              <div>
+                <i class="fa-solid fa-users-line icon"></i>
+                المتدربين 
+              </div>
+            </a>
+          </li>
+          <li class="list-item">
+            <a href="">
+              <div>
+                <i class="fa-solid fa-chalkboard-user icon"></i>
+                الدورات التدريبية
+              </div>
+            </a>
+          </li>
+          <!-- <li class="list-item">
+            <a
+              data-bs-toggle="collapse"
+              href="#user-notices"
+              aria-expanded="false"
+            >
+              <div>
+                <i class="fa-solid fa-bell icon"></i>
+                إشعارات الاعضاء
+              </div>
+              <i class="fa-solid fa-angle-right arrow"></i>
+            </a>
+          </li>
+          <div class="collapse item-collapse" id="user-notices">
+            <li class="list-item">
+              <a href="{{ route('admin.notifications.index') }}">
+                <div>
+                  <i class="fa-solid fa-bell icon"></i>
+                  الكل
+                </div>
+              </a>
+            </li>
+          </div> -->
+        </ul>
+      </div>
+      <div class="main-side">
+        <div class="container-fluid pt-4">
+          <nav class="main-navbar">
+            <div class="w-100 d-flex align-items-center justify-content-between">
+                <div class="tog-nav tog-active" data-tog="true" data-active=".app">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="list-item">
+                    <a href="#" class="icon-nav">
+                        <i class="fa-solid fa-language"></i>
+                    </a>
+                    <div class="dropdown msg icon-nav">
+                        <div class="badge-count">0</div>
+                        <button class="dropdown-toggle icon-nav" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-regular fa-envelope"></i>
+                        </button>
+                    </div>
+                    <div class="dropdown notice icon-nav">
+                        <div class="badge-count">0</div>
+                        <button class="dropdown-toggle icon-nav" type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="far fa-bell"></i>
+                        </button>
+                    </div>
+                    <button type="submit" class="icon-nav">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <section class="py-5">
+          <nav aria-label="breadcrumb ">
+            <ol class="breadcrumb bg-light p-3">
+              <li href="" class="breadcrumb-item" aria-current="page">
+                الرئيسية
+              </li>
+            </ol>
+          </nav>
+          <div class="section_content content_view"></div>
+        </section>
+        </div>
+      </div>
+    </div>
+    <div class="footer-app d-flex align-items-center justify-content-end gap-2">
+      <a href="https://www.const-tech.org/">
+        جميع الحقوق محفوظة موثوق 2022
+        <img src="img/login_logo.png" class="logo" alt="logo_login" />
+      </a>
+    </div>
+    <!-- End layout -->
+    <!-- Js Files -->
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+  </body>
+</html>

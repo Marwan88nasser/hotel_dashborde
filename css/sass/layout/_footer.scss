@@ -1,0 +1,20 @@
+.footer-app {
+  a {
+      color: #999999;
+      &:hover {
+          color: #a09f9f;
+      }
+  }
+  // background-color: #eee;
+  background: #3d3d3d;
+  // color: #444;
+  height: 55px;
+  color: #999999;
+  z-index: 9000;
+  position: relative;
+  text-align: start;
+  padding: 10px 10px;
+  .logo {
+      width: 50px;
+  }
+}

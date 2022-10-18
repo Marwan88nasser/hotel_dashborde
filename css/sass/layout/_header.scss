@@ -1,0 +1,64 @@
+.main-navbar {
+  @include centering;
+  min-height: 51px;
+  width: 100%;
+  z-index: 999999;
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  background-color: #2d2d2d;
+  padding: 10px 15px;
+  color: white;
+  .tog-nav {
+      font-size: 25px;
+      display: flex;
+      cursor: pointer;
+  }
+  .list-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      .icon-nav {
+          color: #fff;
+          font-size: 16px;
+          &.notice {
+              .badge-count {
+                  background-color: $light-blue;
+              }
+          }
+          &.msg {
+              .badge-count {
+                  border-radius: 50%;
+                  -webkit-border-radius: 50%;
+                  -moz-border-radius: 50%;
+                  -ms-border-radius: 50%;
+                  -o-border-radius: 50%;
+              }
+          }
+          .badge-count {
+              position: absolute;
+              right: -8px;
+              top: -4px;
+              z-index: 2;
+              width: 15px;
+              height: 15px;
+          }
+          .dropdown-toggle {
+              position: relative;
+              &::after {
+                  display: none;
+              }
+          }
+      }
+      @include maxWidth(sm) {
+          .btn {
+              font-size: 12px !important;
+              padding: 4px !important;
+          }
+      }
+  }
+}
+
+button.icon-nav {
+  font-size: 15px !important;
+}
